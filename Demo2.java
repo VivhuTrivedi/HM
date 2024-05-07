@@ -4,26 +4,18 @@ import java.util.Scanner;
 class Emp{
     int id,age;
 	String name;
-}
-
-class Dev extends Emp
-{
-	
-	int salary=60000;
-	
-	String desig="Developer";
-	Dev()
-	{
+    int salary;
+	String desig;
+	Emp(){
 		Scanner sc= new Scanner(System.in);
 		System.out.println(" Enter ID : ");
-		 id=sc.nextInt();
+		 id=sc.nextInt();1
 		System.out.println(" Enter Name : ");
 		 name=sc.next();
 		System.out.println(" Enter Age : ");
 		 age=sc.nextInt();
-				
+	}
 
-	}	
 	void display()
 	{
 		System.out.println(" Hi ID "+id);	
@@ -33,29 +25,26 @@ class Dev extends Emp
 		System.out.println(" My Designation : "+desig);	
 	}
 }
-class Clerk extends Emp
+
+class Dev extends Emp
 {
 	
-	int salary=20000;
+	Dev()
+	{
+		
+		salary=60000;
 	
-	String desig="Clerk";
-	Clerk()
-	{
-		Scanner sc= new Scanner(System.in);
-		System.out.println(" Enter ID : ");
-		 id=sc.nextInt();
-		System.out.println(" Enter Name : ");
-		 name=sc.next();
-		System.out.println(" Enter Age : ");
-		 age=sc.nextInt();
+	  desig="Developer";		
+
 	}	
-	void display()
-	{
-		System.out.println(" Hi ID "+id);	
-		System.out.println(" My Name : "+name);	
-		System.out.println(" Hi AGE "+age);	
-		System.out.println(" My Salary : "+salary);		
-		System.out.println(" My Designation : "+desig);	
+	
+}
+class Clerk extends Emp
+{
+	Clerk(){
+	salary=20000;
+	
+	desig="Clerk";
 	}
 }
 
