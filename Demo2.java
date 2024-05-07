@@ -1,10 +1,16 @@
 
 import java.util.Scanner;
-c lass Dev
-{
-	int id,age;
-	int salary=60000;
+
+class Emp{
+    int id,age;
 	String name;
+}
+
+class Dev extends Emp
+{
+	
+	int salary=60000;
+	
 	String desig="Developer";
 	Dev()
 	{
@@ -27,11 +33,11 @@ c lass Dev
 		System.out.println(" My Designation : "+desig);	
 	}
 }
-class Clerk
+class Clerk extends Emp
 {
-	int id,age;
+	
 	int salary=20000;
-	String name;
+	
 	String desig="Clerk";
 	Clerk()
 	{
